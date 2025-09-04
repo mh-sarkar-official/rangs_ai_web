@@ -1,0 +1,47 @@
+# Next.js
+.next/
+out/
+build/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Coverage
+coverage/
+!.nyc_output
+
+# Build outputs
+.vercel
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Optional: if using TypeScript
+.next/types/
+
+# Optional: if using Prisma or other ORMs
+prisma/dev.db
+prisma/migrations/*
+
+# Optional: if using Docker
+Dockerfile.local
+.dockerignore
