@@ -3,7 +3,9 @@ import { getToken } from "./storage";
 const BASE = process.env.NEXT_PUBLIC_API;
 
 function headers(extra?: Record<string,string>) {
-  const h: Record<string,string> = { "Content-Type": "application/json", "ngrok-skip-browser-warning": "true", };
+  const h: Record<string,string> = { "Content-Type": "application/json", 
+    "ngrok-skip-browser-warning": "true",
+   };
   const t = getToken();
   if (t) h["Authorization"] = `Bearer ${t}`;
   return { ...h, ...(extra || {}) };

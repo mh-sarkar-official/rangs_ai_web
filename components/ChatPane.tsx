@@ -63,7 +63,7 @@ export default function ChatPane({ conversationId }: { conversationId?: number }
     try {
       const res = await apiPost<{ text: string; answer?: string; conversation_id?: number }>(
         "/ask",
-        { question: q, language: "auto" },
+        { question: q, language: "auto" , debug: true },
         conversationId
       );
 
